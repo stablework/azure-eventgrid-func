@@ -1,7 +1,7 @@
 import { app, EventGridEvent, InvocationContext } from "@azure/functions";
 import * as signalR from "@microsoft/signalr";
 
-const SIGNALR_URL = process.env.SIGNALR_URL || "https://cookersignalr.service.signalr.net;AuthType=azure.msi;Version=1.0";
+const SIGNALR_URL = process.env.SIGNALR_URL || "https://cookersignalr.service.signalr.net";
 const HUB_NAME = "blobNotifications"; // Replace with your hub name
 const SIGNALR_KEY = process.env.SIGNALR_KEY || "1ty5jKSckPygTbyXu55kds47hpTiIbH1L6asUDcD19KkEP3xYmneJQQJ99BAAC1i4TkXJ3w3AAAAASRSjjyS"; 
 
