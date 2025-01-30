@@ -43,7 +43,8 @@ export async function CookerEventGridTrigger(event: EventGridEvent, context: Inv
     // Send the event data to your frontend via Pusher
     pusher.trigger(channel, lastAction, {
         message: `A new event occurred: ${eventType}`,
-        blobUrl: blobName,
+        blobName: blobName,
+        blobUrl: eventData?.url
     });
 
 }
