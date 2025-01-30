@@ -17,7 +17,7 @@ export async function CookerEventGridTrigger(event: EventGridEvent, context: Inv
     const eventData = event.data;
     let lastAction = "UnknownEvent";
     // Extract blob name
-    const blobName = (eventData.url as string).split('/').pop() || "Unknown File";
+    const blobName = (eventData?.url as string).split('/').pop() || "Unknown File";
 
     // Format event type into a simpler string
     switch (eventType) {
