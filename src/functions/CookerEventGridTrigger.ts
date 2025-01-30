@@ -1,5 +1,5 @@
 import { app, EventGridEvent, InvocationContext } from "@azure/functions";
-import { Pusher } from "pusher";
+import Pusher from "pusher";
 
 // Initialize Pusher
 const pusher = new Pusher({
