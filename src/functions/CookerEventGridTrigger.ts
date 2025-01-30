@@ -41,7 +41,7 @@ export async function CookerEventGridTrigger(event: EventGridEvent, context: Inv
     const channel = 'blob-notifications'; // The name of your channel (can be dynamic based on event data)
     
     // Send the event data to your frontend via Pusher
-    pusher.trigger(channel, eventType, {
+    pusher.trigger(channel, lastAction, {
         message: `A new event occurred: ${eventType}`,
         blobUrl: blobName,
     });
