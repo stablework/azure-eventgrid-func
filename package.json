@@ -12,7 +12,7 @@
   },
   "dependencies": {
     "@azure/functions": "^4.6.0",
-    "@microsoft/signalr": "^8.0.7"
+    "pusher": "^5.2.0"
   },
   "devDependencies": {
     "@types/node": "^20.x",
